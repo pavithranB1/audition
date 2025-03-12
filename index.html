@@ -182,147 +182,111 @@ Welcome to our exclusive cinema audition event, where dreams meet opportunities!
 -->
 
 
-
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>EVENTS - Cinema Auditions</title>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap" rel="stylesheet">
+    <title>EVENTS | Cinema Audition</title>
+    <link rel="stylesheet" href="styles.css">
     <style>
         /* Global Styling */
         body {
-            background: linear-gradient(to right, #0f0c29, #302b63, #24243e);
+            font-family: Arial, sans-serif;
+            background-color: black;
             color: white;
-            font-family: 'Poppins', sans-serif;
-            text-align: center;
             margin: 0;
             padding: 0;
+            text-align: center;
         }
 
-        /* Header Styles */
         h1 {
-            color: #ffcc00;
-            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
-            font-size: 2.5rem;
-            margin: 20px;
+            background: linear-gradient(to right, #FFD700, #FF4500);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            font-size: 2.5em;
         }
 
-        h2 {
-            color: #ff69b4;
-            font-size: 1.8rem;
-            margin: 15px;
-        }
-
-        p {
-            font-size: 1.2rem;
-            max-width: 90%;
-            margin: 10px auto;
-            line-height: 1.5;
-            padding: 0 10px;
-        }
-
-        /* Image Styling */
-        img {
+        .container {
             width: 90%;
-            max-width: 500px;
-            border-radius: 15px;
-            box-shadow: 0px 5px 15px rgba(255, 255, 255, 0.2);
-            margin: 20px 0;
+            max-width: 800px;
+            margin: auto;
+            padding: 20px;
         }
 
-        /* Register Button */
-        .register-btn {
-            background: linear-gradient(to right, #ffcc00, #ffeb3b);
-            color: black;
-            padding: 15px 30px;
-            text-decoration: none;
-            font-size: 1.2rem;
-            font-weight: bold;
-            border-radius: 8px;
-            transition: 0.3s;
+        .btn {
             display: inline-block;
-            margin-top: 20px;
-            box-shadow: 0px 4px 10px rgba(255, 255, 0, 0.3);
+            padding: 12px 24px;
+            margin: 10px;
+            font-size: 18px;
+            font-weight: bold;
+            text-decoration: none;
+            border-radius: 5px;
+            border: none;
+            cursor: pointer;
+        }
+
+        .register-btn {
+            background: linear-gradient(to right, #FFD700, #FF4500);
+            color: black;
         }
 
         .register-btn:hover {
-            background: linear-gradient(to right, #ffeb3b, #ffcc00);
-            transform: scale(1.1);
-            box-shadow: 0px 6px 15px rgba(255, 255, 0, 0.5);
+            background: linear-gradient(to right, #FF4500, #FFD700);
         }
 
-        /* Contact Section */
-        .contact {
-            background: rgba(255, 255, 255, 0.1);
-            padding: 20px;
+        .gallery img {
+            width: 100%;
+            max-width: 400px;
             border-radius: 10px;
-            box-shadow: 0px 5px 10px rgba(255, 255, 255, 0.2);
-            width: 90%;
-            max-width: 500px;
-            margin: 20px auto;
+            margin: 10px;
+            box-shadow: 0px 0px 15px rgba(255, 217, 0, 0.8);
         }
 
-        .contact h3 {
-            color: #ffcc00;
-            margin: 5px 0;
-        }
-
-        /* Footer */
-        footer {
-            background-color: rgba(0, 0, 0, 0.3);
+        .contact {
+            background: linear-gradient(to right, #191970, #1E90FF);
             padding: 10px;
-            margin-top: 20px;
-            font-size: 0.9rem;
+            border-radius: 5px;
         }
 
         /* Responsive Design */
-        @media (max-width: 768px) {
+        @media (max-width: 600px) {
             h1 {
-                font-size: 2rem;
+                font-size: 2em;
             }
-            h2 {
-                font-size: 1.5rem;
-            }
-            p {
-                font-size: 1rem;
-            }
-            .register-btn {
-                padding: 12px 25px;
-                font-size: 1rem;
+            .btn {
+                font-size: 16px;
             }
         }
     </style>
 </head>
 <body>
-    <h1>🎬 MEGA AUDITION !!!</h1>
-    <p>It's time to showcase your talent to the world...</p>
-
-    <hr>
-
-    <h2>Welcome to Our Cinema Audition Event</h2>
-    <p>
-        A golden opportunity for fresh talents to enter the film industry! Our professional panel will guide you through script readings, monologue performances, and auditions.
-    </p>
-
-    <img src="clapperboardnew.jpeg" alt="Cinema Audition">
-
-    <h2>📸 Photo Gallery</h2>
-    <h2 style="color: lightgreen;">✅ Free Entry | ✅ No Age Limit | ✅ Free Food</h2>
-
-    <a href="register.html" class="register-btn">👉 Register Now 👈</a>
-
-    <div class="contact">
-        <h3>📧 Email: cineauditions@gmail.com</h3>
-        <h3>📞 Contact: 9876543210</h3>
-        <h4>📍 Address: No.12, Cine Park Road, Kollywood Street, Chennai-600001</h4>
+    <div class="container">
+        <h1>MEGA AUDITION !!!🎬</h1>
+        <p>It's time to explore your talent and shine in the cinema world!</p>
+        
+        <hr>
+        <p>
+            Welcome to our Cinema Audition Event, a platform where fresh talents can step into the film industry. 
+            From acting performances to monologues, experience a professional environment with expert judges. 
+            Get a chance to be a part of something amazing!
+        </p>
+        
+        <div class="gallery">
+            <img src="clapperboardnew.jpeg" alt="Cinema Audition">
+        </div>
+        
+        <h2 style="color: darkmagenta;">🎟 Free Entry | 🎭 No Age Limit | 🍕 Free Food</h2>
+        
+        <a href="register.html" class="btn register-btn">👉 Register Here 👈</a>
+        
+        <h2>📅 Limited Slots Available | Online Registration</h2>
+        
+        <hr>
+        <div class="contact">
+            <h3>📩 Contact: cineauditions@gmail.com</h3>
+            <h3>📞 Mob: 9876543210</h3>
+            <h4>📍 No:12, Cine Park Road, Kollywood Street, Chennai-600001.</h4>
+        </div>
     </div>
-
-    <footer>
-        © 2025 KVN Productions. All Rights Reserved.
-    </footer>
 </body>
 </html>
-
