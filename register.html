@@ -69,82 +69,170 @@
     <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Register | KVN Productions</title>
     
+</head>
+<body>
+    <div class="container">
+        <center>
+            <h1 class="gradient-text">KVN PRODUCTIONS 🎥</h1>
+            <h5>Enter | Explore | Experience</h5> 
+            <p>Welcome to KVN Productions! Get the opportunity to enter the competitive cinema world.</p>
+        </center>
+        <hr>
+        
+        <center>
+            <h2 class="form-title">Registration Form</h2>
+            <form>
+                <div class="input-group">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" placeholder="Enter your Name">
+                </div>
+                
+                <div class="input-group">
+                    <label for="age">Age:</label>
+                    <input type="number" id="age" placeholder="Enter your Age">
+                </div>
+                
+                <div class="input-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" placeholder="Enter your Email">
+                </div>
+                
+                <div class="input-group">
+                    <label>Gender:</label>
+                    <input type="radio" name="gender" id="male"><label for="male">Male</label>
+                    <input type="radio" name="gender" id="female"><label for="female">Female</label>
+                </div>
+                
+                <div class="input-group">
+                    <label for="role">Select a Role:</label>
+                    <select id="role">
+                        <option>Male Lead</option>
+                        <option>Female Lead</option>
+                        <option>Comedian</option>
+                        <option>Supporting Role</option>
+                    </select>
+                </div>
+                
+                <div class="input-group">
+                    <label for="upload">Upload Your Image (doc):</label>
+                    <input type="file" id="upload">
+                </div>
+                
+                <div class="btn-group">
+                    <input type="submit" value="Submit">
+                    <input type="reset" value="Reset">
+                </div>
+            </form>
+        </center>
+        
+        <hr>
+        <center>
+            <p>
+                <a href="index.html" class="link-btn">🏠 Home</a> 
+                <a href="https://www.instagram.com/pavithranb_45?igsh=OHZuZ2dtbThvbTRh" class="link-btn">📸 Instagram</a>
+            </p>
+        </center>
+    </div>
+
     <style>
         body {
-            background: linear-gradient(135deg, #0f0f0f, #1e1e1e);
+            background: linear-gradient(to right, #141e30, #243b55);
             color: white;
-            font-family: 'Arial', sans-serif;
+            font-family: Arial, sans-serif;
             text-align: center;
-            padding: 20px;
+            margin: 0;
+            padding: 0;
         }
-        h1 {
-            color: gold;
-            font-size: 2.5em;
-            text-shadow: 2px 2px 10px rgba(255, 217, 0, 0.8);
-        }
-        form {
-            background: rgba(255, 255, 255, 0.1);
+
+        .container {
             padding: 20px;
-            border-radius: 10px;
-            width: 90%;
-            max-width: 400px;
+            max-width: 500px;
             margin: auto;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 10px;
             box-shadow: 0 0 15px rgba(255, 217, 0, 0.5);
         }
+
+        .gradient-text {
+            background: linear-gradient(to right, #FFD700, #FF4500);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            font-size: 2.5em;
+            font-weight: bold;
+        }
+
+        .form-title {
+            font-size: 1.8em;
+            margin-bottom: 20px;
+            color: #FFD700;
+        }
+
+        .input-group {
+            margin: 10px 0;
+            text-align: left;
+        }
+
+        .input-group label {
+            display: block;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+
         input, select {
             width: 100%;
             padding: 10px;
-            margin: 10px 0;
+            border: 2px solid black;
             border-radius: 5px;
-            border: none;
-            background: rgba(255, 255, 255, 0.2);
-            color: white;
-        }
-        input:focus, select:focus {
-            outline: none;
-            box-shadow: 0 0 10px gold;
-        }
-        button {
-            width: 100%;
-            padding: 12px;
-            border: none;
-            border-radius: 5px;
-            background: gold;
-            color: black;
             font-size: 1em;
-            cursor: pointer;
-            transition: 0.3s;
         }
-        button:hover {
-            background: orange;
-            box-shadow: 0 0 10px orange;
+
+        /* Enhanced Placeholder Style */
+        input::placeholder, textarea::placeholder {
+            color: white;
+            font-size: 1em;
+            font-weight: bold;
+            opacity: 1;
+        }
+
+        .btn-group {
+            margin-top: 20px;
+        }
+
+        .btn-group input {
+            width: 48%;
+            background: linear-gradient(to right, #ff9900, #ff3300);
+            color: white;
+            font-size: 1em;
+            font-weight: bold;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin: 5px;
+        }
+
+        .btn-group input:hover {
+            background: linear-gradient(to right, #ffcc00, #ff6600);
+        }
+
+        .link-btn {
+            color: #FFD700;
+            font-weight: bold;
+            text-decoration: none;
+            padding: 5px 15px;
+            border: 2px solid #FFD700;
+            border-radius: 5px;
+            margin: 5px;
+            display: inline-block;
+        }
+
+        .link-btn:hover {
+            background: #FFD700;
+            color: black;
         }
     </style>
-</head>
-<body>
-    <h1>KVN PRODUCTIONS 🎥</h1>
-    <h3>Enter | Explore | Experience</h3>
-    <p>Welcome to KVN Productions! Showcase your talent and step into the cinematic world.</p>
-    
-    <form>
-        <input type="text" placeholder="Enter your Name" required>
-        <input type="number" placeholder="Enter your Age" required>
-        <input type="email" placeholder="Enter your Email" required>
-        <select required>
-            <option value="">Select a Role</option>
-            <option value="male-lead">Male Lead</option>
-            <option value="female-lead">Female Lead</option>
-            <option value="comedian">Comedian</option>
-            <option value="supporting">Supporting Role</option>
-        </select>
-        <input type="file" required>
-        <button type="submit">Submit</button>
-    </form>
-    
-    <p><a href="index.html" style="color: gold; text-decoration: none;">⬅ Back to Home</a></p>
 </body>
 </html>
