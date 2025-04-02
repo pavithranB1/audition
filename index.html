@@ -187,43 +187,55 @@ Welcome to our exclusive cinema audition event, where dreams meet opportunities!
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>EVENTS | Cinema Audition</title>
-    <link rel="stylesheet" href="styles.css">
+    
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
     <style>
         /* Global Styling */
         body {
             font-family: Arial, sans-serif;
-            background-color: black;
+            background: url('clapperboardnew.jpeg') no-repeat center center fixed;
+            background-size: cover;
             color: white;
             margin: 0;
             padding: 0;
             text-align: center;
+            position: relative;
+        }
+
+        body::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.6);
+            z-index: -1;
         }
 
         h1 {
-    font-size: 2.5em;
-    background: linear-gradient(to right, #FFD700, #FF4500);
-    color: transparent; 
-    background-clip: text;
-    -webkit-background-clip: text;
-}
+            font-size: 2.5em;
+            background: linear-gradient(to right, #FFD700, #FF4500);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
 
         .container {
             width: 90%;
             max-width: 800px;
             margin: auto;
             padding: 20px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(255, 217, 0, 0.5);
         }
 
         .btn {
-            display: inline-block;
             padding: 12px 24px;
-            margin: 10px;
             font-size: 18px;
             font-weight: bold;
-            text-decoration: none;
             border-radius: 5px;
-            border: none;
-            cursor: pointer;
         }
 
         .register-btn {
@@ -289,5 +301,8 @@ Welcome to our exclusive cinema audition event, where dreams meet opportunities!
             <h4>📍 No:12, Cine Park Road, Kollywood Street, Chennai-600001.</h4>
         </div>
     </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
